@@ -6,8 +6,8 @@ const dataSource = new ProductData("tents");
 let oldCart = getLocalStorage("so-cart");
 if (!Array.isArray(oldCart)) {
   oldCart = [];
-  }
-  
+}
+
 let currentCart = Array.from(oldCart);
 
 function addProductToCart(product) {
