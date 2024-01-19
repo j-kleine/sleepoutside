@@ -1,5 +1,6 @@
 Trello board URL: "https://trello.com/b/qkMZwHGi/sleep-outside-trello-board"
 
+============================
 DELETE Branches in VS Code:
 LOCAL:
     - open "Command Palette" (Ctrl+Shift+P on Windows/Linux, CMD+Shift+P on Mac)
@@ -13,6 +14,6 @@ REMOTE:
     - open "Terminal"
     - enter "git fetch --prune"
 
-=======
+============================
 Joschua Kleine
 Luis Castillo
