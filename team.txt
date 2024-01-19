@@ -1,4 +1,18 @@
 Trello board URL: "https://trello.com/b/qkMZwHGi/sleep-outside-trello-board"
+
+DELETE Branches in VS Code:
+LOCAL:
+    - open "Command Palette" (Ctrl+Shift+P on Windows/Linux, CMD+Shift+P on Mac)
+    - Select "Git: Delete Branch..."
+    - Choose branch to delete
+
+REMOTE:
+    - open "Command Palette" (Ctrl+Shift+P on Windows/Linux, CMD+Shift+P on Mac)
+    - Select "Git: Fetch (Prune)"
+        OR
+    - open "Terminal"
+    - enter "git fetch --prune"
+
 =======
 Joschua Kleine
 Luis Castillo
