@@ -1,5 +1,10 @@
 Trello board URL: "https://trello.com/b/qkMZwHGi/sleep-outside-trello-board"
 
+============================
+Joschua Kleine
+Luis Castillo
+
+============================
 DELETE Branches in VS Code:
 LOCAL:
     - open "Command Palette" (Ctrl+Shift+P on Windows/Linux, CMD+Shift+P on Mac)
@@ -13,6 +18,16 @@ REMOTE:
     - open "Terminal"
     - enter "git fetch --prune"
 
-=======
-Joschua Kleine
-Luis Castillo
+============================
+STEPS for Working on Assignments:
+    1. Choose a Trello card, assign yourself to it, and move to "Doing".
+    2. Pull any changes from your team's project.
+    3. Make a branch.
+    4. Complete the work.
+    5. Lint and format the code.
+    6. Commit and push.
+    7. Make a pull request for your new branch.
+    8. Let your group know there is a pull request waiting.
+    9. Another team member should review the pull request in GitHub and, if everything looks good, Merge the request.
+    10. Delete the old branch.
+    11. Move the Trello card to the "Done" list.
