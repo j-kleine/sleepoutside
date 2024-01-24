@@ -11,5 +11,4 @@ const productListing = new ProductList("Tents", dataSource, listElement);
 // CONSOLE Test
 // console.log(productListing);
 
-
 productListing.init();
