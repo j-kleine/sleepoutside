@@ -1,3 +1,4 @@
+import { loadHeaderFooter } from "./utils.mjs";
 import { getLocalStorage } from "./utils.mjs";
 
 function renderCartContents() {
@@ -26,4 +27,5 @@ function cartItemTemplate(item) {
     return newItem;
 }
 
+loadHeaderFooter();
 renderCartContents();
