@@ -109,6 +109,18 @@ button {
 .cart:hover svg {
     fill: gray;
 }
+/* Cart Content Count Badge (task superscript number of items) */
+.cart-badge {
+    /* display: none; */
+    position: absolute;
+    top: 0.25rem;
+    left: 0.5rem;
+    padding: 0 0.4rem;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: var(--dark-grey);
+    text-decoration: none;
+}
 
 /* End cart icon styles */
 

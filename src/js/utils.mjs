@@ -41,6 +41,15 @@ async function loadTemplate(path) {
   return template;
 }
 
+function displayCartBadge(key) {
+  const cartContent = getLocalStorage(key) || [];
+  const cartContentCount = cartContent.length;
+  if (cartContentCount > 0) {
+    // console.log(cartContentCount);
+    document.querySelector(".cart-badge").innerHTML = cartContentCount;
+  }
+}
+
 export async function loadHeaderFooter() {
   const headerTemplate = await loadTemplate("../partials/header.html");
   const headerElement = document.querySelector("#main-header");
@@ -49,6 +58,8 @@ export async function loadHeaderFooter() {
 
   renderWithTemplate(headerTemplate, headerElement);
   renderWithTemplate(footerTemplate, footerElement);
+
+  displayCartBadge("so-cart");
 }
 
 // set a listener for both touchend and click
