@@ -273,6 +273,7 @@ button:active {
 /* Start cart checkout styles */
 .checkout-box {
     display: flex;
+    max-width: 650px;
 }
 
 .checkout-box a {
@@ -290,7 +291,7 @@ button:active {
     text-decoration: underline;
 }
 
-.checkout-box:active {
+.checkout-box a:active {
     filter: grayscale(1);
 }
 
