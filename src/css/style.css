@@ -91,6 +91,12 @@ button {
     font-size: var(--large-font);
     cursor: pointer;
 }
+button:hover {
+    text-decoration: underline;
+}
+button:active {
+    filter: grayscale(1);
+}
 .divider {
     border-bottom: 2px solid var(--primary-color);
 }
@@ -261,6 +267,75 @@ button {
 
 .total-sum {
     margin: 0;
+    font-weight: bold;
+}
+
+/* Start cart checkout styles */
+.checkout-box {
+    display: flex;
+}
+
+.checkout-box a {
+    margin: auto;
+    border: 0;
+    padding: 0.5em 2em;
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: var(--large-font);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.checkout-box a:hover {
+    text-decoration: underline;
+}
+
+.checkout-box:active {
+    filter: grayscale(1);
+}
+
+/* Start checkout page styles */
+/* Start checkout form styles */
+fieldset {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--primary-color);
+}
+
+legend {
+    padding: 0 .5rem;
+}
+
+fieldset div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.label-input {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+}
+
+.checkout-summary {
+    margin: 4rem 1em .5rem 1rem;
+    padding: .5rem 2rem;
+    background-color: #ffdd9d;
+}
+
+#order-total {
     font-weight: bold;
 }
 
