@@ -20,13 +20,23 @@ function cartItemTemplate(item) {
 }
 
 export default class ShoppingCart {
-    constructor(key, parentSelector) {
+    constructor(key, parentSelector, totalSelector) {
         this.key = key;
         this.parentSelector = parentSelector;
+        this.totalSelector = totalSelector;
       }
       renderCartContents() {
         const cartItems = getLocalStorage(this.key) || [];
         const htmlItems = cartItems.map((item) => cartItemTemplate(item));
         document.querySelector(this.parentSelector).innerHTML = htmlItems.join("");
+      }
+      calculateCartTotal() {
+        const cartItems = getLocalStorage(this.key) || [];
+        const cartTotal = cartItems.reduce((sum, item) => sum + item.FinalPrice, 0);
+        // console.log(cartTotal);
+        if (!cartTotal == 0) {
+          document.querySelector(this.totalSelector).innerHTML = `Total: $${cartTotal}`;
+        }
+        // return cartTotal;
       }
 }

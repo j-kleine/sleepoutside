@@ -91,6 +91,12 @@ button {
     font-size: var(--large-font);
     cursor: pointer;
 }
+button:hover {
+    text-decoration: underline;
+}
+button:active {
+    filter: grayscale(1);
+}
 .divider {
     border-bottom: 2px solid var(--primary-color);
 }
@@ -216,6 +222,8 @@ button {
     display: grid;
     grid-template-columns: 25% auto 15%;
     font-size: var(--small-font);
+    width: 100%;
+    max-width: 650px;
     /* max-height: 120px; */
     align-items: center;
 }
@@ -247,6 +255,90 @@ button {
     grid-column: 3;
 }
 
+/* Start cart total sum styles */
+.total-box {
+    display: flex;
+    justify-content: end;
+    padding: 2rem;
+    padding-top: 0;
+    width: 100%;
+    max-width: 650px;
+}
+
+.total-sum {
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Start cart checkout styles */
+.checkout-box {
+    display: flex;
+}
+
+.checkout-box a {
+    margin: auto;
+    border: 0;
+    padding: 0.5em 2em;
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: var(--large-font);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.checkout-box a:hover {
+    text-decoration: underline;
+}
+
+.checkout-box:active {
+    filter: grayscale(1);
+}
+
+/* Start checkout page styles */
+/* Start checkout form styles */
+fieldset {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--primary-color);
+}
+
+legend {
+    padding: 0 0.5rem;
+}
+
+fieldset div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.label-input {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+}
+
+.checkout-summary {
+    margin: 4rem 1em 0.5rem 1rem;
+    padding: 0.5rem 2rem;
+    background-color: #ffdd9d;
+}
+
+#order-total {
+    font-weight: bold;
+}
+
 @media screen and (min-width: 500px) {
     body {
         max-width: 1080px;
@@ -258,6 +350,10 @@ button {
     .cart-card {
         font-size: inherit;
         grid-template-columns: 150px auto 15%;
+    }
+
+    fieldset {
+        padding: 0 4rem;
     }
 }
 
