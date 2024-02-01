@@ -18,7 +18,7 @@
         <main class="divider checkout">
             <section class="products">
                 <h2>Review & Place your Order</h2>
-            
+
                 <section class="checkout-form">
                     <form name="checkout">
                         <fieldset>
@@ -26,25 +26,74 @@
                                 <h3>Shipping</h3>
                             </legend>
                             <div class="checkout__name">
-                                <label class="label" for="fname">First Name
-                                    <input class="label-input" id="fname" name="fname" pattern="[A-Za-z]{2,20}" title="(min. 2 characters) Please enter your first name" required >
+                                <label class="label" for="fname"
+                                    >First Name
+                                    <input
+                                        class="label-input"
+                                        id="fname"
+                                        name="fname"
+                                        pattern="[A-Za-z]{2,20}"
+                                        title="(min. 2 characters) Please enter your first name"
+                                        required
+                                    />
                                 </label>
-                                <label  class="label" for="lname">Last Name
-                                    <input class="label-input" id="lname" name="lname" pattern="[A-Za-z]{2,20}" title="(min. 2 characters) Please enter your last name" required >
+                                <label class="label" for="lname"
+                                    >Last Name
+                                    <input
+                                        class="label-input"
+                                        id="lname"
+                                        name="lname"
+                                        pattern="[A-Za-z]{2,20}"
+                                        title="(min. 2 characters) Please enter your last name"
+                                        required
+                                    />
                                 </label>
                             </div>
                             <div class="checkout__address">
-                                <label  class="label" for="street">Street Address
-                                    <input class="label-input" id="street" name="street" pattern="[A-Za-z0-9\s\-\.,']+" title="Please enter your street address" required >
+                                <label class="label" for="street"
+                                    >Street Address
+                                    <input
+                                        class="label-input"
+                                        id="street"
+                                        name="street"
+                                        pattern="[A-Za-z0-9\s\-\.,']+"
+                                        title="Please enter your street address"
+                                        required
+                                    />
                                 </label>
-                                <label  class="label" for="city">City
-                                    <input class="label-input" id="city" name="city" pattern="[A-Za-z\s\-]+" title="Please enter your city" required >
+                                <label class="label" for="city"
+                                    >City
+                                    <input
+                                        class="label-input"
+                                        id="city"
+                                        name="city"
+                                        pattern="[A-Za-z\s\-]+"
+                                        title="Please enter your city"
+                                        required
+                                    />
                                 </label>
-                                <label  class="label" for="state">State
-                                    <input class="label-input" id="state" name="state" pattern="[A-Za-z\s\-]+" title="Please enter your state" required >
+                                <label class="label" for="state"
+                                    >State
+                                    <input
+                                        class="label-input"
+                                        id="state"
+                                        name="state"
+                                        pattern="[A-Za-z\s\-]+"
+                                        title="Please enter your state"
+                                        required
+                                    />
                                 </label>
-                                <label  class="label" for="zip">Zip Code
-                                    <input class="label-input" id="zip" name="zip" id="zip" pattern="[0-9]{5}" title="Please enter your zip code" required >
+                                <label class="label" for="zip"
+                                    >Zip Code
+                                    <input
+                                        class="label-input"
+                                        id="zip"
+                                        name="zip"
+                                        id="zip"
+                                        pattern="[0-9]{5}"
+                                        title="Please enter your zip code"
+                                        required
+                                    />
                                 </label>
                             </div>
                         </fieldset>
@@ -53,44 +102,81 @@
                             <legend>
                                 <h3>Payment</h3>
                             </legend>
-                            <label  class="label" for="cardNumber">Credit Card Number
-                                <input class="label-input" id="cardNumber" name="cardNumber" pattern="[0-9]{12}" title="Please enter your credit card number" required >
+                            <label class="label" for="cardNumber"
+                                >Credit Card Number
+                                <input
+                                    class="label-input"
+                                    id="cardNumber"
+                                    name="cardNumber"
+                                    pattern="[0-9]{12}"
+                                    title="Please enter your credit card number"
+                                    required
+                                />
                             </label>
-                            
-                            <label  class="label" for="expiration">Expiration Date
-                                <input class="label-input" id="expiration" name="expiration" pattern="[0-9]{1,2}/[0-9]{2}" title="Please enter your card expiration date" required >
+
+                            <label class="label" for="expiration"
+                                >Expiration Date
+                                <input
+                                    class="label-input"
+                                    id="expiration"
+                                    name="expiration"
+                                    pattern="[0-9]{1,2}/[0-9]{2}"
+                                    title="Please enter your card expiration date"
+                                    required
+                                />
                             </label>
-                            <label  class="label" for="code">Security Code
-                                <input class="label-input" id="code" name="code" pattern="[0-9]{3}" title="Please enter your card security code" required >
+                            <label class="label" for="code"
+                                >Security Code
+                                <input
+                                    class="label-input"
+                                    id="code"
+                                    name="code"
+                                    pattern="[0-9]{3}"
+                                    title="Please enter your card security code"
+                                    required
+                                />
                             </label>
                         </fieldset>
 
                         <section class="checkout-summary">
                             <h3>Order Summary</h3>
                             <ul>
-                            <li>
-                                <p>Subtotal (<span id="itemsNumber"></span> items): $<span id="cartTotalValue"></span> </p>
-                            </li>
-                            <li>
-                                <p>Shipping: $<span id="shippingValue"></span></p>
-                            </li>
-                            <li>
-                                <p>Tax: $<span id="taxValue"></span></p>
-                            </li>
-                            <li>
-                                <p id="order-total">Order Total: $<span id="orderTotalValue"></span></p>
-                            </li>
+                                <li>
+                                    <p>
+                                        Subtotal (<span id="itemsNumber"></span>
+                                        items): $<span
+                                            id="cartTotalValue"
+                                        ></span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Shipping: $<span
+                                            id="shippingValue"
+                                        ></span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>Tax: $<span id="taxValue"></span></p>
+                                </li>
+                                <li>
+                                    <p id="order-total">
+                                        Order Total: $<span
+                                            id="orderTotalValue"
+                                        ></span>
+                                    </p>
+                                </li>
                             </ul>
                         </section>
 
-                        <button id="checkoutSubmit" type="submit">Order Now</button>
+                        <button id="checkoutSubmit" type="submit">
+                            Order Now
+                        </button>
                     </form>
                 </section>
             </section>
         </main>
 
         <footer id="main-footer"></footer>
-
-        
     </body>
 </html>
