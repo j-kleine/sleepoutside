@@ -1,5 +1,5 @@
 # sleepoutside
-- Build version URL: "https://resplendent-hamster-b7411d.netlify.app/"
+- Build version URL: "https://sleepoutside-wdd330g17.netlify.app/"
 
 ## Description
 
