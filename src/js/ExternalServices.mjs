@@ -1,20 +1,21 @@
 const baseURL = import.meta.env.VITE_SERVER_URL;
-const checkoutURL = baseURL + ":3000" + "/checkout/";
+const checkoutURL = baseURL + "/checkout/";
 
 // console.log(baseURL);
 
-function convertToJson(res) {
+async function convertToJson(res) {
+  const jsonResponse = await res.json();
   if (res.ok) {
-    return res.json();
+    return jsonResponse;
   } else {
-    throw new Error("Bad Response");
+    throw { name: "servicesError", message: jsonResponse };
   }
 }
 
 export default class ExternalServices {
   constructor(category) {
-    this.category = category;
-    this.path = `../json/${this.category}.json`;
+    // this.category = category;
+    // this.path = `../json/${this.category}.json`;
   }
   async getData(category) {
     const response = await fetch(baseURL + `/products/search/${category}`);
@@ -34,6 +35,9 @@ export default class ExternalServices {
       },
       body: JSON.stringify(payload),
     };
+    
+    // console.log("Checkout Payload:", JSON.stringify(payload));
+
     return await fetch(checkoutURL, options).then(convertToJson);
   }
 }
