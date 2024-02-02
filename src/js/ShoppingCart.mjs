@@ -32,7 +32,7 @@ export default class ShoppingCart {
       }
       calculateCartTotal() {
         const cartItems = getLocalStorage(this.key) || [];
-        const cartTotal = cartItems.reduce((sum, item) => sum + item.FinalPrice, 0);
+        const cartTotal = cartItems.reduce((sum, item) => sum + item.FinalPrice, 0).toFixed(2);
         // console.log(cartTotal);
         if (!cartTotal == 0) {
           document.querySelector(this.totalSelector).innerHTML = `Total: $${cartTotal}`;

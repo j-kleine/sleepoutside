@@ -273,6 +273,7 @@ button:active {
 /* Start cart checkout styles */
 .checkout-box {
     display: flex;
+    max-width: 650px;
 }
 
 .checkout-box a {
@@ -290,7 +291,7 @@ button:active {
     text-decoration: underline;
 }
 
-.checkout-box:active {
+.checkout-box a:active {
     filter: grayscale(1);
 }
 
@@ -327,6 +328,7 @@ label {
     margin: 0;
     padding: 1rem 1.5rem;
     font-size: 1rem;
+    font-weight: bold;
 }
 
 .checkout-summary {
@@ -337,6 +339,33 @@ label {
 
 #order-total {
     font-weight: bold;
+}
+
+.alert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 1rem;
+    border: 2px solid #e67429;
+    background-color: var(--primary-color);
+}
+
+.alert * {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.alert span {
+    border: 1px solid var(--dark-grey);
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+}
+
+.alert span:hover {
+    color: white;
+    border-color: white;
 }
 
 @media screen and (min-width: 500px) {
